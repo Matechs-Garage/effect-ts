@@ -5,7 +5,7 @@ import { reduce_ } from "./reduce"
  * joins the elements togehther with "sep" in the middle
  */
 export function join_(self: Chunk<string>, sep: string) {
-  return reduce_(self, "", (s, a) => (s.length > 0 ? `${sep}${s}${a}` : a))
+  return reduce_(self, "", (s, a) => (s.length > 0 ? `${s}${sep}${a}` : a))
 }
 
 /**
